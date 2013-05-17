@@ -3,11 +3,12 @@
 
   %head
     %meta{ :"http-equiv"=>"Content-Type", :content=>"text/html; charset=UTF-8" }/
-    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+    %meta{ name: "viewport", content: "width=device-width" }/
     %title= page.title || "Borderline Framing"
-    %link{ :href=>href("assets/bootstrap/css/bootstrap.css"), :rel=>"stylesheet", :type=>"text/css" }
-    %link{ :href=>href("assets/bootstrap/css/bootstrap-responsive.css"), :rel=>"stylesheet", :type=>"text/css" }
-    %link{ :href=>href("assets/style.css"), :rel=>"stylesheet", :type=>"text/css" }
+    %link{ href: href("assets/foundation-4/css/normalize.css"), rel: "stylesheet", type: "text/css" }
+    %link{ href: href("assets/foundation-4/css/foundation.css"), rel: "stylesheet", type: "text/css" }
+    %link{ href: href("assets/style.css"), rel: "stylesheet", type: "text/css" }
+    %script{ src: "assets/foundation-4/js/vendor/custom.modernizr.js" }
     ~ content_for[:head]
 
   %body{:class => @body_class}

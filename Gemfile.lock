@@ -1,12 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    clamp (0.5.1)
+    clamp (0.6.1)
     daemons (1.1.9)
     eventmachine (1.0.3)
     haml (4.0.2)
       tilt
-    pith (0.3.3)
+    pith (0.3.4)
       clamp (>= 0.3.0)
       rack (>= 1.2.1)
       thin (>= 1.2.7)
@@ -26,7 +26,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  pith (~> 0.3.3)
+  pith (~> 0.3.4)
   rake
   rdiscount
   sass

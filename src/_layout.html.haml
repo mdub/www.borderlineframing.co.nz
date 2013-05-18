@@ -4,7 +4,7 @@
   %head
     %meta{ :"http-equiv"=>"Content-Type", :content=>"text/html; charset=UTF-8" }/
     %meta{ name: "viewport", content: "width=device-width" }/
-    %title= page.title || "Borderline Framing"
+    %title= "Borderline Framing"
     %link{ href: href("css/normalize.css"), rel: "stylesheet", type: "text/css" }
     %link{ href: href("css/foundation.css"), rel: "stylesheet", type: "text/css" }
     %link{ href: href("assets/style.css"), rel: "stylesheet", type: "text/css" }
@@ -13,5 +13,4 @@
 
   %body{:class => @body_class}
 
-    .container
-      ~ yield
+    ~ yield

@@ -5,8 +5,19 @@ layout: "/_layout.html.haml"
 .row
 
   .columns
-    %h1 Borderline Framing
-    %hr/
+    %h1
+      %img{ src: href("logo.png") }
+      %span.nowrap Borderline Framing
+
+.contain-to-grid.sticky
+  .nav.top-bar
+    %section.top-bar-section
+      %ul.left
+        %li
+          %a Main
+        %li.divider
+        %li
+          %a Second
 
 .row
 

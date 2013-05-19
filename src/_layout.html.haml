@@ -7,10 +7,21 @@
     %title= "Borderline Framing"
     %link{ href: href("css/normalize.css"), rel: "stylesheet", type: "text/css" }
     %link{ href: href("css/foundation.css"), rel: "stylesheet", type: "text/css" }
-    %link{ href: href("assets/style.css"), rel: "stylesheet", type: "text/css" }
+    %link{ href: href("css/borderline.css"), rel: "stylesheet", type: "text/css" }
     %script{ src: "js/vendor/custom.modernizr.js" }
     ~ content_for[:head]
 
   %body{:class => @body_class}
 
     ~ yield
+
+  %script
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\/script>')
+
+  %script{ src: href("js/foundation/foundation.js") }
+  %script{ src: href("js/foundation/foundation.magellan.js") }
+  %script{ src: href("js/foundation/foundation.orbit.js") }
+  %script{ src: href("js/foundation/foundation.topbar.js") }
+  %script
+    $(document).foundation();

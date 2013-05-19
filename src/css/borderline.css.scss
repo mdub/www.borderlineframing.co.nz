@@ -1,3 +1,28 @@
 .nowrap {
   white-space: nowrap;
 }
+
+.row.top {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+.vcard {
+  [class*="foundicon-"] {
+    color: #999;
+    vertical-align: text-top;
+    margin: 2px;
+  }
+}
+
+footer {
+  background: #333;
+  color: #ddd;
+  padding-top: 0.8em;
+  .vcard {
+    border: 0;
+    .adr {
+      display: inline-block;
+    }
+  }
+}

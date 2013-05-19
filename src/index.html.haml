@@ -2,26 +2,16 @@
 layout: "/_layout.html.haml"
 ...
 
-.row
+.row.top
 
-  .columns
+  .columns.large-7
     %h1
       %img{ src: href("logo.png") }
       %span.nowrap Borderline Framing
 
-.contain-to-grid.sticky
-  .nav.top-bar
-    %section.top-bar-section
-      %ul.left
-        %li
-          %a Main
-        %li.divider
-        %li
-          %a Second
-
 .row
 
-  .columns.large-5.panel
+  .columns.large-5.panel.radius
 
     %h3 Preservation, Beautification, Conservation
 
@@ -32,7 +22,7 @@ layout: "/_layout.html.haml"
 
     %h3 We offer
 
-    %ul.push-1
+    %ul.small-offset-1
       %li Customised framing to fit all sizes and dimensions
       %li Artwork preparation for exhibition
       %li 2D and 3D framing and presentation
@@ -46,18 +36,29 @@ layout: "/_layout.html.haml"
 .row
 
   .columns.large-8.large-centered
-    .panel
 
+    %blockquote
       %p
         "Picture framing isn't rocket science – anyone can learn to put four sticks together. But the name of the framing game is quality and preservation.
 
       %p
         "Your mementoes are precious and artwork is expensive, which is why you need a professional framer to preserve and beautify your pieces. Professional framing transforms what’s precious to you and preserves it for generations."
 
-      %p
-        %em Campbell McLean, Borderline Framing
+      %cite Campbell McLean, Borderline Framing
 
-  .columns.large-8
+%footer
+  .row
 
-/ Contact: Campbell MacLean by email or phone 04 3848 569/027 3848 055
-/ Address: 5 Anderson Tce, Mt Cook, Wellington 6021
+    .columns.large-6.large-centered
+
+      %ul.vcard
+        %li.fn Campbell MacLean
+        %li
+          %i.foundicon-mail
+          %a.email(href="mailto:cmaclean@borderlineframing.co.nz") cmaclean@borderlineframing.co.nz
+        %li
+          %i.foundicon-phone
+          %span.tel 027 3848 055
+        %li
+          %i.foundicon-location
+          %span.adr 5 Anderson Tce, Mt Cook

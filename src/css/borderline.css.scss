@@ -3,12 +3,41 @@
 }
 
 .row.top {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1em;
+  h1 {
+    margin: 0;
+  }
+  margin: 1em 0;
 }
 
 img.logo {
   max-height: 2em;
+}
+
+ul.horizontal-menu {
+
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid #ccc;
+  border-width: 1px 0;
+
+  li {
+    display: inline-block;
+  }
+
+  li:after {
+    content: "\2014";
+    color: #ccc;
+    padding: 0.6em;
+  }
+
+  li:last-child:after {
+    content: "";
+  }
+
+  padding: 0.5em;
+  margin-bottom: 2em;
+
 }
 
 .vcard {

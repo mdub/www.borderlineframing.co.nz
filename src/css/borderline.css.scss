@@ -54,6 +54,7 @@ blockquote {
 }
 
 .vcard {
+  background: #eee;
   [class*="foundicon-"] {
     color: #999;
     vertical-align: text-top;
@@ -61,14 +62,9 @@ blockquote {
   }
 }
 
-footer {
-  background: #333;
-  color: #ddd;
-  padding-top: 0.8em;
-  .vcard {
-    border: 0;
-    .adr {
-      display: inline-block;
-    }
-  }
+.map {
+  display: inline-block;
+  margin-bottom: 1em;
+  border: 1px solid #999;
+  padding: 10px;
 }

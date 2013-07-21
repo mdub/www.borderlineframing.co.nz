@@ -15,7 +15,7 @@ end
 
 task "browse" do
   Process.fork do
-    sleep 0.5
+    sleep 2
     sh("open http://localhost:9876")
   end
 end

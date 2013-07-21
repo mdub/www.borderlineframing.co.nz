@@ -14,7 +14,9 @@
 
   %body{:class => @body_class}
 
+    ~ include("_header.html.haml")
     ~ yield
+    ~ include("_footer.html.haml")
 
   %script{ src: href("js/vendor/zepto.js") }
   %script{ src: href("js/foundation/foundation.js") }

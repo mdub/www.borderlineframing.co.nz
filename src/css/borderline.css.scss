@@ -40,6 +40,19 @@ ul.horizontal-menu {
 
 }
 
+blockquote {
+
+  color: #666;
+  border: 0;
+
+  cite {
+    text-align: right;
+    font-size: 1em;
+    color: #999;
+  }
+
+}
+
 .vcard {
   [class*="foundicon-"] {
     color: #999;

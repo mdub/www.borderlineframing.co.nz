@@ -10,7 +10,7 @@ end
 
 desc "build the site and rebuild as required"
 task "serve" do
-  sh "pith -i src -o out serve -p 9876 -L"
+  sh "pith -i src -o out serve -p 9876"
 end
 
 task "browse" do

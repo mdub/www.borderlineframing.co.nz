@@ -55,6 +55,9 @@ blockquote {
 
 .vcard {
   background: #eee;
+  li {
+    white-space: nowrap;
+  }
   [class*="foundicon-"] {
     color: #999;
     vertical-align: text-top;
@@ -67,4 +70,11 @@ blockquote {
   margin-bottom: 1em;
   border: 1px solid #999;
   padding: 10px;
+}
+
+section {
+
+  border-top: 1px solid black;
+  padding: 1em 0;
+
 }

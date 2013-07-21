@@ -2,38 +2,20 @@
 layout: "/_layout.html.haml"
 ...
 
-.row
+%section
+  .row
+    .columns
+      %h2 Welcome
+  = include("/_sections/intro.html.haml")
 
-  .columns.large-5.panel.radius
+%section
+  .row
+    .columns
+      %h2 Testimonials
+  = include("/_sections/testimonials.html.haml")
 
-    %h3 Preservation, Beautification, Conservation
-
-    %p
-      Whether it’s high-value art, a child’s priceless painting, a hard-won qualification, or a precious piece of memorabilia, Borderline Framing’s creative framing solutions will ensure your framed pieces give pleasure for years to come.
-
-  .columns.large-6
-
-    %h3 We offer
-
-    %ul.small-offset-1
-      %li Customised framing to fit all sizes and dimensions
-      %li Artwork preparation for exhibition
-      %li 2D and 3D framing and presentation
-      %li Conservation framing to archival standards
-      %li Picturing hanging & installation
-      %li Corporate & commercial framing
-      %li Frame and glass repairs
-      %li A 20% discount for framing children’s art work
-      %li Expert advice from 25 years’ framing experience.
-
-.row
-
-  .columns.large-8.large-centered
-
-    = quote "Campbell McLean, Borderline Framing" do
-
-      %p
-        Picture framing isn't rocket science – anyone can learn to put four sticks together. But the name of the framing game is quality and preservation.
-
-      %p
-        Your mementoes are precious and artwork is expensive, which is why you need a professional framer to preserve and beautify your pieces. Professional framing transforms what’s precious to you and preserves it for generations.
+%section
+  .row
+    .columns
+      %h2 Contact info
+  = include("/_sections/contact.html.haml")

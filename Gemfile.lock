@@ -16,8 +16,11 @@ GEM
     clamp (0.6.1)
     daemons (1.1.9)
     eventmachine (1.0.3)
+    ftp_sync (0.4.3)
+      net-ftp-list (>= 2.1.1)
     haml (4.0.2)
       tilt
+    net-ftp-list (3.2.5)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
@@ -34,6 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ftp_sync
   haml
   pith (~> 0.3.4)!
   rake

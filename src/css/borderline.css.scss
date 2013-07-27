@@ -9,14 +9,15 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .row.top {
-  h1 {
-    margin: 0;
-  }
   margin: 1em auto;
-}
-
-img.logo {
-  max-height: 2em;
+  img.logo {
+    float: left;
+    margin-right: 1em;
+  }
+  h1 {
+    margin: 0.1em;
+    vertical-align: middle;
+  }
 }
 
 ul.horizontal-menu {

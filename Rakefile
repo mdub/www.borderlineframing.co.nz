@@ -30,7 +30,7 @@ task "publish" => "build" do
   BasicSocket.do_not_reverse_lookup = true
 
   username, password = ENV.fetch("BORDERLINE_FRAMING_CREDENTIALS").split(":")
-  ftp_sync = FtpSync.new "ftp.borderlineframing.co.nz", username, password, :verbose => true
+  ftp_sync = FtpSync.new "ftp.borderlineframing.co.nz", username, password, :verbose => true, :passive => true
   ftp_sync.push_dir("out", "public_html")
 
 end

@@ -54,19 +54,20 @@ ul.horizontal-menu {
 
 blockquote {
 
-  color: #666;
+  color: #333;
   border: 0;
 
   cite {
     text-align: right;
     font-size: 1em;
-    color: #999;
+    color: #666;
   }
 
 }
 
 .vcard {
-  background: #eee;
+  background: #fff;
+  border: 1px solid #999;
   [class*="foundicon-"] {
     color: #999;
     vertical-align: text-top;
@@ -80,9 +81,13 @@ blockquote {
 }
 
 .map {
-  margin-bottom: 1em;
-  border: 1px solid #999;
-  padding: 10px;
+  iframe {
+    border: 1px solid #999;
+  }
+}
+
+.darker {
+  background: #eee;
 }
 
 section {
@@ -91,4 +96,3 @@ section {
   padding: 1em 0;
 
 }
-

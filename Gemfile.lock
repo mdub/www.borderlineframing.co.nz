@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/mdub/pith.git
+  remote: https://github.com/mdub/pith.git
   revision: 14c1750537bf41f6d0eb566fdf105662aa9f946b
   ref: 14c1750
   specs:
@@ -13,25 +13,35 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    clamp (0.6.1)
-    daemons (1.1.9)
-    eventmachine (1.0.3)
+    clamp (1.3.1)
+    daemons (1.3.1)
+    eventmachine (1.2.7)
+    ffi (1.11.3)
     ftp_sync (0.4.3)
       net-ftp-list (>= 2.1.1)
-    haml (4.0.2)
+    haml (5.1.2)
+      temple (>= 0.8.0)
       tilt
-    net-ftp-list (3.2.5)
-    rack (1.5.2)
-    rack-livereload (0.3.15)
+    net-ftp-list (3.2.11)
+    rack (2.0.8)
+    rack-livereload (0.3.17)
       rack
-    rake (10.0.4)
-    rdiscount (2.0.7.2)
-    sass (3.2.8)
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
-    tilt (1.3.7)
+    rake (13.0.1)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
+    rdiscount (2.2.0.1)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+    temple (0.8.2)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -43,3 +53,6 @@ DEPENDENCIES
   rake
   rdiscount
   sass
+
+BUNDLED WITH
+   2.0.2

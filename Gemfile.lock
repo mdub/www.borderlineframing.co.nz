@@ -21,7 +21,7 @@ GEM
     haml (4.0.2)
       tilt
     net-ftp-list (3.2.5)
-    rack (1.5.2)
+    rack (2.0.8)
     rack-livereload (0.3.15)
       rack
     rake (10.0.4)

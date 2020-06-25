@@ -23,7 +23,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     net-ftp-list (3.2.11)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-livereload (0.3.17)
       rack
     rake (13.0.1)
